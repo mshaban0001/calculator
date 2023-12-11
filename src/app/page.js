@@ -43,12 +43,20 @@ export default function Home() {
                   btnValue === '='
                     ? handleCalculate()
                     : handleButtonClick(btnValue)
+                }
+                onTouchStart={() =>
+                  btnValue === '='
+                    ? handleCalculate()
+                    : handleButtonClick(btnValue)
                 }>
                 {btnValue}
               </button>
             )
           )}
-          <button className='btn' onClick={handleClear}>
+          <button
+            className='btn'
+            onClick={handleClear}
+            onTouchStart={handleClear}>
             C
           </button>
           {/* <button class='btn'>1</button>
