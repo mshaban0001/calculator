@@ -39,12 +39,7 @@ export default function Home() {
               <button
                 key={index}
                 className='btn'
-                // onClick={() =>
-                //   btnValue === '='
-                //     ? handleCalculate()
-                //     : handleButtonClick(btnValue)
-                // }
-                onTouchStart={() =>
+                onClick={() =>
                   btnValue === '='
                     ? handleCalculate()
                     : handleButtonClick(btnValue)
@@ -53,10 +48,7 @@ export default function Home() {
               </button>
             )
           )}
-          <button
-            className='btn'
-            // onClick={handleClear}
-            onTouchStart={handleClear}>
+          <button className='btn' onClick={handleClear}>
             C
           </button>
         </div>
