@@ -39,11 +39,11 @@ export default function Home() {
               <button
                 key={index}
                 className='btn'
-                onClick={() =>
-                  btnValue === '='
-                    ? handleCalculate()
-                    : handleButtonClick(btnValue)
-                }
+                // onClick={() =>
+                //   btnValue === '='
+                //     ? handleCalculate()
+                //     : handleButtonClick(btnValue)
+                // }
                 onTouchStart={() =>
                   btnValue === '='
                     ? handleCalculate()
@@ -55,29 +55,10 @@ export default function Home() {
           )}
           <button
             className='btn'
-            onClick={handleClear}
+            // onClick={handleClear}
             onTouchStart={handleClear}>
             C
           </button>
-          {/* <button class='btn'>1</button>
-          <button class='btn'>2</button>
-          <button class='btn'>3</button>
-          <button class='btn'>+</button>
-
-          <button class='btn'>4</button>
-          <button class='btn'>5</button>
-          <button class='btn'>6</button>
-          <button class='btn'>-</button>
-
-          <button class='btn'>7</button>
-          <button class='btn'>8</button>
-          <button class='btn'>9</button>
-          <button class='btn'>/</button>
-
-          <button class='btn'>0</button>
-          <button class='btn'>.</button>
-          <button class='btn'>=</button>
-          <button class='btn'>*</button> */}
         </div>
       </div>
     </main>
