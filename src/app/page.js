@@ -28,7 +28,7 @@ export default function Home() {
           <input
             type='text'
             value={inputValue}
-            className='w-full h-full rounded-2xl outline-none px-4'
+            className='w-full max-w-full h-full rounded-2xl outline-none px-4'
             readOnly
           />
         </div>
@@ -38,7 +38,7 @@ export default function Home() {
             (btnValue, index) => (
               <button
                 key={index}
-                className='btn'
+                className='btn md:w-1/4'
                 onClick={() =>
                   btnValue === '='
                     ? handleCalculate()
@@ -48,7 +48,7 @@ export default function Home() {
               </button>
             )
           )}
-          <button className='btn' onClick={handleClear}>
+          <button className='btn md:w-1/4' onClick={handleClear}>
             C
           </button>
         </div>
